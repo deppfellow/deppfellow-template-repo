@@ -1,0 +1,9 @@
+eslint
+eslint-config-prettier
+\---------------------------/
+|-> "eslint:recommended", , "prettier"
+
+
+// Script to run on package.json
+\---------------------------/
+|-> "eslint \"src/**/*.{jsx,js}\" --quiet"
