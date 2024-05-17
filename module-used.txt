@@ -1,7 +1,17 @@
 eslint
 eslint-config-prettier
 \---------------------------/
-|-> "eslint:recommended", , "prettier"
+|-> "extends": { "eslint:recommended", "prettier" }
+
+
+eslint-plugin-import
+eslint-plugin-jsx-a11y
+eslint-plugin-react
+\---------------------------/
+|-> "extends": { "plugin:import/recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended" }
+|-> "rules": { "react/prop-types": 0, "react/react-in-jsx-scope": 0 }
+|-> "plugins": [ "react", "import", "jsx-a11y" ]
+|-> "settings": { "react": { "version": "detect" }, "import/resolver": { "node": {"extensions": ["js", "jsx"]} } }
 
 
 // Script to run on package.json
